@@ -1,0 +1,39 @@
+/* The class names and style declarations below were added to help you get started.
+If you would prefer, you can delete them and use your own classes and style declarations. */
+
+
+
+nav {
+  display: inline-block;
+}
+
+.nav-list {
+  padding: 0 2em;
+  margin: 0;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--background);
+  border-radius: 2em;
+}
+
+nav .list-item {
+  box-sizing:border-box;
+  padding: 1em 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.nav-link:hover {
+  color: var(--brand-primary);
+}
+
+.nav-link:focus {
+  background-color: var(--background-secondary);
+  color: var(--brand-primary);
+}

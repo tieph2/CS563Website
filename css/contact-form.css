@@ -1,0 +1,101 @@
+#contact {
+    width:100%;
+    height:100%;
+    margin: 0px auto;
+}
+
+form[name="contact-form"] {
+    display: grid;
+    grid-gap: 0px 16px;
+    grid-template-areas: 
+    'name email'
+    'message message';
+}
+
+.form-element {
+    grid-area: 'form-element';
+}
+
+.form-container {
+    height:auto;
+    margin: 0 auto;
+}
+
+.message-field {
+    grid-area: message;
+}
+
+.name-field {
+    grid-area: name;
+}
+
+.email-field {
+    grid-area: email;
+}
+
+#contact .form-container form input,
+#contact .form-container form textarea {
+	width:100%;
+	height:4em;
+	padding:5px 10px;
+	font-size: 12px;
+	color:#999;
+	letter-spacing:1px;
+	margin-bottom:25px;
+    -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;
+}
+
+#contact .form-container form input:focus,
+#contact .form-container form textarea:focus {
+	border:1px solid var(--brand-primary);
+	color:#999;
+}
+
+#contact .form-container form textarea {
+	height:150px;
+}
+
+#contact .form-container form .submit {
+	width:100%;
+	padding:5px 10px;
+	font-size: 12px;
+	letter-spacing:1px;
+	background:#dd4545;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+	border:2px solid var(--brand-primary);
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;
+}
+
+#contact .form-container form .submit:hover {
+	color:#FFF;
+	border:2px solid #dd4545;
+	background: #b43838;
+	cursor:pointer;
+}
+
+#contact .form-container form .required {
+	color:#b43838;
+}
+
+.form-label {
+    margin: 0;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.form-header {
+    margin: .5em 0px;
+    color: var(--text-primary);
+}

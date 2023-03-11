@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open-Sans');
+@import url('header.css');
 @import url('footer.css');
 @import url('navbar.css');
+@import url('contact-form.css');
 
 * {
     box-sizing: border-box;
@@ -30,22 +32,26 @@
     --green: #006400;
 
     --brand-primary: #f56149;
-    --brand-secondary: #3f130c;
+    --brand-secondary: #27e4bf;
 
-    --background: #ececec;
+    --background: #F5F6F7;
     --background-secondary: #d0d0d0;
+    --background-brand: #fffaf9;
+    --background-form: #f9f4f4;
 
     --text-primary: #111;
     --text-secondary: #333;
     --text-disabled: #3d3d3d;
 
-    --button-primary: #a43322;
+    --button-primary: #a83624;
   }
-  
+ 
+
   body {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
     color: var(--text-primary);
+    background-color: var(--background-brand);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -53,8 +59,9 @@
     justify-content: space-between;
   }
 
-  h1 {
-    text-align: center;
+  main {
+    margin: 0 5em;
+    align-items: center;
   }
   
 
@@ -62,15 +69,14 @@ h1 {
     font-family: 'Cabin','Helvetica', sans-serif;
     font-size: 2em;
     font-weight: bold;
-    color: var(--brand-primary)
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3em;
+h2 {
+  font-family: 'Cabin','Helvetica', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
 }
+
 
 .logo-container {
   display: flex;
@@ -93,9 +99,10 @@ header {
 .btn {
   padding-left: 1em;
   padding-right: 1em;
-  background-color: var(--button-primary);
+  color: var(--text-primary);
+  background-color: var(--brand-secondary);
   border-radius: 50px;
-  border: solid var(--button-primary) 1px;
+  border: solid var(--brand-secondary) 1px;
 }
 
 .btn:hover {
@@ -112,10 +119,52 @@ header {
   box-shadow:0 0 0 0.25rem var(--button-primary)
 }
 
+.icon {
+  opacity: 0.9;
+}
 .icon-right {
-  margin-left: .5em;
+  margin-left: .25em;
 }
 
 .icon-left {
-  margin-right: .5em;
+  margin-right: .25em;
+}
+
+.content-block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

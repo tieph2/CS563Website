@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>03 - Form</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
+  </head>
+  <body>
+    <main>
+      <form  class="form" action="">
+        <h1>Registration Form</h1>
+
+        <div class="form-element">
+          <label for="username">Username</label>
+          <input type="text" name="Username" id="username" />
+        </div>
+
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="email" name="Email" id="email" />
+        </div>
+
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" name="Password" id="password" />
+        </div>
+
+        <fieldset class="form-element">
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <div class="radio-group">
+            <input type="radio" name="option" id="yes" />
+            <label for="yes">Yes, sign me up</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" name="option" id="no" />
+            <label for="no">No, thank you</label>
+          </div>
+        </fieldset>
+
+        <div class="form-element">
+          <label for="date">Date</label>
+          <input type="date" name="Date" id="date" />
+        </div>
+
+        <div class="btn-group form-element">
+          <input type="submit" class="btn btn-primary" value="Submit" />
+          <input type="reset" class="btn btn-secondary" value="Reset" />
+        </div>
+
+      </form>
+    </main>
+  </body>
+</html>

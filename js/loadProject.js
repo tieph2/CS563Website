@@ -1,7 +1,7 @@
 projects = [
   {
     name: "Headphone Database",
-    thumbnail: "/images/database-schema.png",
+    thumbnail: "images/database-schema.png",
     technology: ["SQL", "Python"],
     url: "www.github.com",
     description:
@@ -9,7 +9,7 @@ projects = [
   },
   {
     name: "Lofi-Aleatory",
-    thumbnail: "/images/sound-generator.png",
+    thumbnail: "images/sound-generator.png",
     technology: ["C++"],
     url: "https://github.com/Cesium1289/Lofi-Aleatory",
     description:

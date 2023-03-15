@@ -5,7 +5,7 @@ projects = [
     technology: ["SQL", "Python"],
     url: "www.github.com",
     description:
-      "As an avid audiophile, I love collecting headphones, but it's hard to pick the right pair of headphones that fit my budget and use case. That's why for my CS586, I created this headphone database in PostgreSQL. Then with some Python code, I create a program that can query the database and output a few intereseting visualization from the results. ",
+      "As an avid audiophile, I love collecting headphones, but it's hard to pick the right pair of headphones that fit my budget and use case. That's why for my CS586 Database class, I created this headphone database in PostgreSQL. Then with some Python code, I made a program that can query the database and output a few intereseting visualization from the results. ",
   },
   {
     name: "Lofi-Aleatory",
@@ -13,7 +13,7 @@ projects = [
     technology: ["C++"],
     url: "https://github.com/Cesium1289/Lofi-Aleatory",
     description:
-      "This is a very simple sound generator made in CSS. Users can change the sound with parameters like root note, beats-per-minute, the ADSR envelope, and choose from 4 types of sound wave. This is my first big collaboration project. I learn a lot about C++, as well as Visual Studio.",
+      "This is a very simple sound generator made in C++. Users can change the sound with parameters like root note, beats-per-minute, the ADSR envelope, and choose from 4 types of sound wave. This is my first big collaboration project. I learned a lot about C++, as well as coding and debugging in Visual Studio.",
   },
 ];
 function addProjectsToDom(projects) {

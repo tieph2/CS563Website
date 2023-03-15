@@ -19,60 +19,143 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
     <header id="header" class="expanded">
       <div id="header-container">
         <a href="index.html" class="logo-link">
-        <div class="logo-container">
-          <img class="main-logo" src="images/logo.svg" alt="Main logo" />
-          <h1 class="logo-header">tien&middot;pham</h1>
-        </div>
-      </a>
-      <nav>
-        <ul class="nav-list">
-          <li class="list-item">
-            <a href="pastworks.html" class="nav-link">
-              <i class="icon icon-left fas fa-file fa-xs"></i>
-              Works
-            </a>
-          </li>
-          <li class="nav-item-divider"></li>
-          <li class="list-item">
-            <a href="projects.html" class="nav-link">
-              <i class="icon icon-left fab fa-github fa-sm"></i>
-              Projects</a
-            >
-          </li>
-          <li class="nav-item-divider"></li>
-          <li class="list-item">
-            <a href="index.html" class="nav-link">
-              <i class="icon icon-left fas fa-user fa-xs"></i>
-              About</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <a href="#footer">
-        <button type="submit" class="btn btn-primary m-1">
+          <div class="logo-container">
+            <img class="main-logo" src="images/logo.svg" alt="Main logo" />
+            <h1 class="logo-header">tien&middot;pham</h1>
+          </div>
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li class="list-item">
+              <a href="projects.html" class="nav-link">
+                <i class="icon icon-left fab fa-github fa-sm"></i>
+                Projects</a
+              >
+            </li>
+            <div class="nav-item-divider"></div>
+            <li class="list-item">
+              <a href="index.html" class="nav-link">
+                <i class="icon icon-left fas fa-user fa-xs"></i>
+                About</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary m-1" href="#footer">
           Contact Me
           <i class="icon icon-right fas fa-comment"></i>
-        </button>
-      </a>
+        </a>
       </div>
-      
     </header>
-    <main></main>
+    <main>
+      <div class="hero">
+        <img
+          class="profile-pic card"
+          src="/images/profile-pic.jpeg"
+          alt="Tien Pham profile picture"
+        />
+        <div class="profile-text">
+          <h1 class="banner-header">Hi there!</h1>
+          <p class="banner-text">
+            I'm Tien. I am a graphic designer turned computer scientist, who
+            still spends more time. I hope to leverage my design and UX
+            background to build neat user interface that delights and helps
+            people achieve their goal. 2023 marks my first year in the Master's
+            degree program at PSU. It has been a long journey to get here, and
+            even though they were challening, I love every moment of it. I'm l
+            forward to work with you on cool software. If coding is not your
+            thing,
+            <a class="dark-link" href="www.tiendpham.com"
+              >I can do visual design too!</a
+            >
+          </p>
+          <div class="btn-group">
+            <a
+              class="btn btn-secondary m-1 btn-square"
+              href="https://www.linkedin.com/in/tien-pham-940469a8/"
+            >
+              <i class="icon icon-right fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a class="btn btn-secondary m-1 btn-square" href="./projects.html">
+              <i class="icon icon-right fab fa-github"></i>
+              My Projects
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="content-block">
+        <h2>Skills + Education</h2>
+        <p>Things I learned along the way</p>
+        <section class="grid-container grid-areas-container" id="project-grid">
+          <div class="skills-container" id="cs-skills">
+            <h2>Computer Science</h2>
+            <b>Languages</b>
+            <ul>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>SQL</li>
+            </ul>
+            <b>Skills</b>
+            <ul>
+              <li>Database</li>
+              <li>Web Development</li>
+            </ul>
+            <b>Education</b>
+            <ul>
+              <li>
+                Portland State University - MS in Computer Science (2023-)
+              </li>
+            </ul>
+          </div>
+          <div class="skills-container" id="design-skills">
+            <h2>Graphic Design</h2>
+            <b>Software</b>
+            <ul>
+              <li>Adobe Creative Suite</li>
+              <li>Figma</li>
+            </ul>
+            <b>Skills</b>
+            <ul>
+              <li>UI/UX, Visual Design</li>
+              <li>Visual Design</li>
+              <li>Branding</li>
+              <li>Animation</li>
+            </ul>
+            <b>Education</b>
+            <ul>
+              <li>
+                Portland Community College - Associate of Arts (2014-2016)
+              </li>
+
+              <li>
+                Portland State University - BA in Graphic Design (2016-2019)
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
     <footer id="footer">
       <section id="contact">
         <div class="form-container">
-          <h2 class="form-header">Get in touch with me :) </h2>
+          <h2 class="form-header">Get in touch with me :)</h2>
           <form name="contact-form">
             <div class="form-element name-field">
               <label class="form-label" for="first_name">Name</label>
-              <input type="text" name="first_name" placeholder="NAME" required />
+              <input
+                type="text"
+                name="first_name"
+                placeholder="NAME"
+                required
+              />
             </div>
 
             <div class="form-element email-field">
@@ -82,10 +165,16 @@
 
             <div class="form-element message-field">
               <label class="form-label" for="message">Message</label>
-              <textarea name="message" placeholder="MESSAGE" required></textarea>   
+              <textarea
+                name="message"
+                placeholder="MESSAGE"
+                required
+              ></textarea>
             </div>
             <div class="form-element">
-              <button name="send" type="submit" class="btn btn-primary m-1">Send</button>
+              <button name="send" type="submit" class="btn btn-primary m-1">
+                Send
+              </button>
             </div>
           </form>
         </div>

@@ -13,3 +13,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+    #header {
+      padding: 1em 1em;
+    }
+    #header-container {
+      flex-direction: column;
+    }
+  }  

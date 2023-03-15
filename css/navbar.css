@@ -18,6 +18,7 @@ nav {
 nav .list-item {
   box-sizing:border-box;
   padding: .5em 0;
+  list-style: none;
 }
 
 .nav-link {

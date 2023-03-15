@@ -3,9 +3,9 @@ nav {
 }
 
 .nav-list {
-  padding: 0 .5em;
+  padding: 0 0.5em;
   margin: 0;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +24,8 @@ nav {
 }
 
 nav .list-item {
-  box-sizing:border-box;
-  margin: .5em 0;
+  box-sizing: border-box;
+  margin: 0.5em 0;
   list-style: none;
 }
 

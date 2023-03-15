@@ -5,7 +5,7 @@ projects = [
     technology: ["SQL", "Python"],
     url: "www.github.com",
     description:
-    "As an avid audiophile, I love collecting headphones, but it's hard to pick the right pair of headphones that fit my budget and use case. That's why for my CS586, I created this headphone database in PostgreSQL. Then with some Python code, I create a program that can query the database and output a few intereseting visualization from the results. ",
+      "As an avid audiophile, I love collecting headphones, but it's hard to pick the right pair of headphones that fit my budget and use case. That's why for my CS586, I created this headphone database in PostgreSQL. Then with some Python code, I create a program that can query the database and output a few intereseting visualization from the results. ",
   },
   {
     name: "Lofi-Aleatory",
@@ -30,43 +30,45 @@ function addProjectsToDom(projects) {
 
     let $projectText = $("<div>", {
       class: "project-card-text",
+    });
 
-    })
-  
     let $titleGroup = $("<div>", {
-      class: "header-group"
-    })
+      class: "header-group",
+    });
     let $title = $("<h3>", {
       class: "project-header",
       text: project.name,
     });
     let $technology = $("<h3>", {
-      class: "project-caption"
-    })
-    
+      class: "project-caption",
+    });
+
     let $description = $("<p>", {
       class: "project-description",
       text: project.description,
-    })
+    });
 
     let $gitHubButton = $("<a>", {
       class: "btn btn-secondary btn-square project-link-btn",
       href: project.url,
-      text: "Project Github"
-    })
-
+      text: "Project Github",
+    });
 
     for (tech of project.technology) {
       let $tech = $("<div>", {
         class: "pill",
-        text: tech
+        text: tech,
       });
       $technology.append($tech);
     }
 
     $titleGroup.append($title).append($technology);
     $figure.append($image).appendTo("#project-grid");
-    $projectText.append($titleGroup).append($description).append($gitHubButton).appendTo($figure);
+    $projectText
+      .append($titleGroup)
+      .append($description)
+      .append($gitHubButton)
+      .appendTo($figure);
   }
 }
 $(document).ready(function () {

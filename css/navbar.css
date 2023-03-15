@@ -3,21 +3,29 @@ nav {
 }
 
 .nav-list {
-  padding: 0 1em;
+  padding: 0 .5em;
   margin: 0;
   display:flex;
   flex-wrap: wrap;
-  gap: 12px;
   justify-content: space-between;
   align-items: center;
   color: var(--white);
-  background-color: var(--background);
+  background-color: var(--background-brand);
+  border: solid 1px var(--text-secondary);
   border-radius: 2em;
+}
+
+.nav-list > * {
+  border-right: solid 1px var(--text-secondary);
+}
+
+.nav-list *:last-child {
+  border-right: none;
 }
 
 nav .list-item {
   box-sizing:border-box;
-  padding: .5em 0;
+  margin: .5em 0;
   list-style: none;
 }
 

@@ -39,14 +39,14 @@ form[name="contact-form"] {
 	height:4em;
 	padding:5px 10px;
 	font-size: 12px;
-	color:#999;
+	color: var(--text-primary);
 	letter-spacing:1px;
 	margin-bottom:25px;
-    -webkit-transition:all .1s ease-in-out;
-	-moz-transition:all .1s ease-in-out;
-	-ms-transition:all .1s ease-in-out;
-	-o-transition:all .1s ease-in-out;
-	transition:all .1s ease-in-out;
+}
+
+input::placeholder, textarea::placeholder {
+	color: var(--text-primary);
+	font-weight:lighter;
 }
 
 #contact .form-container form input:focus,
@@ -70,11 +70,6 @@ form[name="contact-form"] {
 	letter-spacing:1px;
 	color:#FFF;
 	border:2px solid var(--brand-primary);
-  -webkit-transition:all .1s ease-in-out;
-	-moz-transition:all .1s ease-in-out;
-	-ms-transition:all .1s ease-in-out;
-	-o-transition:all .1s ease-in-out;
-	transition:all .1s ease-in-out;
 }
 
 #contact .form-container form .submit:hover {

@@ -22,7 +22,7 @@ function addProjectsToDom(projects) {
     let imgAttribute = {
       class: "project-thumbnail",
       src: project.thumbnail,
-      alt: `Project thumbnail`,
+      alt: `${project.name} project thumbnail `,
     };
 
     let $figure = $("<div>", { class: "project-card card" });

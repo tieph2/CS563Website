@@ -12,10 +12,6 @@ form[name="contact-form"] {
     'message message';
 }
 
-.form-element {
-    grid-area: 'form-element';
-}
-
 .form-container {
     height:auto;
     margin: 0 auto;
@@ -52,7 +48,7 @@ input::placeholder, textarea::placeholder {
 #contact .form-container form input:focus,
 #contact .form-container form textarea:focus {
 	border:1px solid var(--brand-primary);
-	color:#999;
+	color:var(--text-primary);
 }
 
 #contact .form-container form textarea {
@@ -74,13 +70,13 @@ input::placeholder, textarea::placeholder {
 
 #contact .form-container form .submit:hover {
 	color:#FFF;
-	border:2px solid #dd4545;
-	background: #b43838;
+	border:2px solid var(--brand-primary);
+	background: var(--brand-primary);
 	cursor:pointer;
 }
 
 #contact .form-container form .required {
-	color:#b43838;
+	color: var(--brand-primary);
 }
 
 .form-label {

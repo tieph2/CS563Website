@@ -47,7 +47,7 @@ a:hover {
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Cabin", "Helvetica Neue", sans-serif;
   color: var(--text-primary);
   background-color: var(--background-brand);
   margin: 0;
@@ -58,7 +58,7 @@ body {
 }
 
 .content-block {
-  margin: 0 5em;
+  margin: 2em 5em;
   align-items: center;
 }
 
@@ -177,11 +177,6 @@ h2 {
   margin-right: 0.25em;
 }
 
-.content-block {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
 .content-block > h2 {
   margin-bottom: .5em;
 }
@@ -189,7 +184,7 @@ h2 {
 .grid-container {
   display: grid;
   gap: 10px;
-  padding: 10px;
+  margin: 2em 0;
 }
 
 .project-thumbnail {
@@ -241,21 +236,11 @@ h2 {
 
 @media (max-width: 768px) {
   .content-block {
-    margin: 0 1em;
+    margin: 2em 2em;
   }
 
   .hero {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-block {
-    margin: 0 1em;
-  }
-
-  .hero {
-    padding: 1em;
   }
 }
 

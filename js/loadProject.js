@@ -48,11 +48,18 @@ function addProjectsToDom(projects) {
       text: project.description,
     });
 
+    let $buttonContainer = $("<div>", {
+      class: "card-btn-container"
+    })
+
+    
     let $gitHubButton = $("<a>", {
       class: "btn btn-secondary btn-square project-link-btn",
       href: project.url,
-      text: "Project Github",
+      text: "Go to Github",
     });
+    
+    $buttonContainer.append($gitHubButton);
 
     for (tech of project.technology) {
       let $tech = $("<div>", {
@@ -67,8 +74,8 @@ function addProjectsToDom(projects) {
     $projectText
       .append($titleGroup)
       .append($description)
-      .append($gitHubButton)
       .appendTo($figure);
+    $figure.append($buttonContainer);
   }
 }
 $(document).ready(function () {
